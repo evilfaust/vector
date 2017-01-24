@@ -2050,12 +2050,13 @@ input[type="button"].btn-block {
   width: 100%; }
 
 .news-block-primary {
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 10px 0;
   border: 0px solid #0275d8;
   border-left-width: 15px;
   border-radius: 3px;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23);
+  background-color: #fff; }
   .news-block-primary h1, .news-block-primary h2, .news-block-primary h3, .news-block-primary h4, .news-block-primary h5, .news-block-primary h6 {
     color: #0275d8; }
   .news-block-primary .data {
@@ -2077,12 +2078,13 @@ input[type="button"].btn-block {
       background-color: #025aa5; }
 
 .news-block-danger {
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 10px 0;
   border: 0px solid #d9534f;
   border-left-width: 15px;
   border-radius: 3px;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23);
+  background-color: #fff; }
   .news-block-danger h1, .news-block-danger h2, .news-block-danger h3, .news-block-danger h4, .news-block-danger h5, .news-block-danger h6 {
     color: #d9534f; }
   .news-block-danger .data {
@@ -2104,12 +2106,13 @@ input[type="button"].btn-block {
       background-color: #c9302c; }
 
 .news-block-purple {
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 10px 0;
   border: 0px solid #613d7c;
   border-left-width: 15px;
   border-radius: 3px;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23);
+  background-color: #fff; }
   .news-block-purple h1, .news-block-purple h2, .news-block-purple h3, .news-block-purple h4, .news-block-purple h5, .news-block-purple h6 {
     color: #613d7c; }
   .news-block-purple .data {

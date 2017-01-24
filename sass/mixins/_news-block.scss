@@ -1,10 +1,11 @@
 @mixin news-block($color) {
-	padding: 20px;
-	margin: 20px 0;
+	padding: 10px;
+	margin: 10px 0;
 	border: 0px solid $color;
 	border-left-width: 15px;
 	border-radius: 3px;
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23);
+	background-color: #fff;
 	// , 0px 0px 2px 3px rgba(0, 0, 0, 0.19);
 		& h1, h2, h3, h4, h5, h6 {
 			// font-style: $fontBold;

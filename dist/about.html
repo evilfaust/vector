@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML+SASS+JS MATH-VECTOR</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- для нативного слайдера-->
+	<link rel="stylesheet" href="css/peppermint.required.css">
+	<script src="js/peppermint.min.js"></script>
+</head>
+<body>
+<div class="container bg-faded">
+
+<!-- слйдер -->
+<div id="carousel-math" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+	<li data-target="#carousel-math" data-slide-to="0" class="active"></li>
+	<li data-target="#carousel-math" data-slide-to="1"></li>
+	<li data-target="#carousel-math" data-slide-to="2"></li>
+	<li data-target="#carousel-math" data-slide-to="3"></li>
+
+  </ol>
+  <div class="carousel-inner" role="listbox">
+	<div class="carousel-item active">
+	  <img class="d-block img-fluid" src="images/baner_001.png" alt="First slide">
+	</div>
+	<div class="carousel-item">
+	  <img class="d-block img-fluid" src="images/baner_002.png" alt="Second slide">
+	</div>
+	<div class="carousel-item">
+	  <img class="d-block img-fluid" src="images/baner_003.png" alt="Third slide">
+	</div>
+	<div class="carousel-item">
+	  <img class="d-block img-fluid" src="images/bg_04.png" alt="Third slide">
+	</div>
+  </div>
+  <a class="carousel-control-prev" href="#carousel-math" role="button" data-slide="prev">
+	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-math" role="button" data-slide="next">
+	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--
+ Еще один слайдер 
+<div class="peppermint peppermint-inactive" id="peppermint">
+  <figure> <img style="width: 100%" src="images/bg_00.png"> </figure>
+
+  <figure> <img style="width: 100%" src="images/bg_01.png"> </figure>
+
+  <figure> <img style="width: 100%" src="images/bg_04.png"> </figure>
+</div>
+<script>
+	var slider = Peppermint(document.getElementById('peppermint'), {
+  dots: true,
+  slideshow: true,
+  speed: 300,
+  slideshowInterval: 3000,
+  stopSlideshowAfterInteraction: true,
+  onSetup: function(n) {
+	console.log('Peppermint setup done. Slides found: ' + n);
+  }
+});
+</script>
+
+-->
+<!-- навигация -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img style="width: 100px" src="images/logo.png"></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+	  <li class="nav-item">
+		<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link active" href="about.html">О школе</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link " href="#">Родителям</a>
+	  </li>
+	  <li class="nav-item">
+		<a href="" class="nav-link">Преподаватели</a>
+	  </li>
+	  <li class="nav-item">
+		<a href="news.html" class="nav-link">Новости</a>
+	  </li>
+	</ul>
+<!--     <form class="form-inline my-2 my-lg-0">
+	  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	</form> -->
+  </div>
+</nav>
+<hr>
+<div class="row justify-content-md-center">
+	<div class="col-md-4"><img class="" src="images/about.jpg" style="width: 100%" alt=""></div>
+	<div class="col-md-6">
+		<h3 class="mt-0 text-primary text-center">Физико-математическая школа "Вектор"</h3>
+		С октября 2015 года при поддержке управления образования города Калуги муниципальным бюджетным учреждением «Центр психолого-педагогической, медицинской и социальной помощи «Стратегия» города Калуги был запущен проект физико-математической школы «Вектор», занятия которой проходят на базе МБОУ «СОШ № 13».
+		Школа «Вектор» (далее - Школа) ориентирована на содействие сотрудничеству субъектов образовательного процесса (педагогов и учащихся), на передачу передового педагогического опыта, выстраивание сетевого взаимодействия с ВУЗами.
+	</div>
+</div>
+<hr>
+<div class="row justify-content-md-center">
+	<div class="col-md-2"><img src="images/cel.png" style="width: 100%" alt=""></div>
+	<div class="col-md-8">
+		<h4 class=" text-primary text-center">Цель школы:</h4>
+		формирование дополнительной образовательной среды для учащихся 8-10 классов МБОУ, выбравших естественно-научное направление, развития их интеллектуального потенциала и потребности к продолжению образования и самообразованию.
+	</div>
+</div>
+<hr>
+<div class="row justify-content-md-center">
+	<div class="col-md-8">
+		<h4 class=" text-primary text-center">Задачи:</h4>
+		<ul>
+			<li>индивидуальное интеллектуальное развитие и реализация творческих возможностей учащихся через систему обучения в Школе;</li>
+			<li>предоставление учащимся общеобразовательных учреждений дополнительных возможностей для освоения курса физики и математики по программам классов с углубленным изучением этого предмета, подготовки школьников к участию в предметных олимпиадах, конкурсах и конференциях различного уровня;</li>
+			<li>повышение уровня и престижа физико-математического образования для обучающихся муниципальных общеобразовательных учреждений, проведение адресной профориентационной работы;</li>
+			<li>реализация принципа преемственности и непрерывности физико-математического образования в системе «школа – учебное заведение профессионального образования»;</li>
+			<li>выявление тенденций современного школьного физического и математического образования и обоснование педагогических условий, обеспечивающих оптимальность реализации основных целей и задач Школы;</li>
+			<li>оказание методической и консультационной помощи учащимся в подготовке к сдаче ЕГЭ и вступительных экзаменов в вузы по физике и математике;</li>
+			<li>организация или оказание помощи общеобразовательным учреждениям в организации школьных олимпиад и научных конференций по физике и математике;</li>
+			<li>организация научно-исследовательской и проектной работы учащихся МБОУ г. Калуги.</li>
+		</ul>
+		
+	</div>
+	<div class="col-md-2 d-flex align-items-center"><img class="" src="images/task.png" style="width: 100%" alt=""></div>
+</div>
+<hr>
+<div class="row justify-content-md-center">
+	<div class="col-md-2 d-flex align-items-center">
+		<img src="images/kurs.png" style="width: 100%" alt="">
+	</div>
+	<div class="col-md-8">
+		<h4 class=" text-primary text-center">Изучаемые курсы</h4>
+		<ul>
+			<li>Курс «Физика» по программам классов с углубленным изучением этого предмета;</li>
+			<li>Курс «Математика» по программам классов с углубленным изучением этого предмета;</li>
+			<li>Курс «Решение олимпиадных задач по математике»;</li>
+			<li>Курс «Программирование» (подготовка к олимпиаде по информатике);</li>
+			<li>Курс «Робототехника»;</li>
+			<li>Курс «Астрономия»;</li>
+			<li>Курс «Основы исследовательской деятельности»;</li>
+			<li>Курс «Решение экспериментальных задач по физике»;</li>
+			<li>Курс «Психология личностного роста»;</li>
+			<li>Курс «ТРИЗ».</li>
+		</ul>
+	</div>
+</div>
+<hr>
+<div class="row justify-content-md-center">
+<div class="col-md-10">
+<!-- 	<img src="images/individ.png" style="width: 60px" alt=""> -->
+	<h3 class="text-danger text-center">Девиз Школы «Каждый ученик – индивидуальность» </h3>
+</div>
+</div>
+<hr>
+<div class="row justify-content-md-center">
+
+<div class="col-md-8">
+	Лучшие учителя школ города, преподаватели ВУЗов, педагоги-психологи помогают каждому из учеников реализовать свой потенциал, т. е. поставить свои учебные цели и достичь их, определить личностные смыслы обучения. В школе 120 учащихся, которым предоставляется возможность и право выбора освоения следующих курсов: Все занятия, проходящие на базе МБОУ «СОШ № 13», КФ ФГБОУ ВПО «Московский государственный технический университет имени Н.Э. Баумана», на площадках партнеров (музеи, предприятия, образовательные учреждения СПО и ВПО и т.д.) способствуют выстраиванию учащимися индивидуальной образовательной траектории. С 7 по 12 декабря 2015 года проходили выездные занятия школы «Вектор» по математике, физике и информатике в рамках проекта «ШОД круглый год» на базе оздоровительного лагеря «Белка».
+</div>
+<div class="col-md-2 d-flex align-items-center">
+	<img src="images/gorizont.png" style="width: 100%" alt="">
+</div>
+</div>
+<hr>
+</div>
+
+</body>
+</html>
