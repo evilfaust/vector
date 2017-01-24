@@ -1,0 +1,11 @@
+// info-block
+.news-block-primary {
+  @include news-block($brand-primary);
+}
+
+.news-block-danger {
+  @include news-block($brand-danger);
+}
+.news-block-purple {
+	@include news-block($purple);
+}
