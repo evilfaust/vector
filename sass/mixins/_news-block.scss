@@ -2,7 +2,8 @@
 	padding: 10px;
 	margin: 10px 0;
 	border: 0px solid $color;
-	border-left-width: 15px;
+	border-left-width: 5px;
+	border-right-width: 5px;
 	border-radius: 3px;
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.23);
 	background-color: #fff;
@@ -11,9 +12,11 @@
 			// font-style: $fontBold;
 			color: $color;
 		}
-		& .data {
+			& .data {
 			// text-align: right;
-			float: right;
+			// float: right;
+			position: absolute;
+			right: 16px;
 
 			  display: inline-block;
 			  padding: $badge-padding-y $badge-padding-x;
@@ -31,6 +34,8 @@
 			  }
 			  @include badge-variant($color);
 			}
-
+& .color {
+	color: $color;
+}
 
 }

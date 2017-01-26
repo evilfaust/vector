@@ -9,3 +9,7 @@
 .news-block-purple {
 	@include news-block($purple);
 }
+
+.news-block-sova {
+  @include news-block($sova);
+}
