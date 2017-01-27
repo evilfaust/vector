@@ -6114,3 +6114,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }

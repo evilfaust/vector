@@ -5,7 +5,10 @@
 	<title>HTML+SASS+JS MATH-VECTOR</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/viewport.js"></script>
+	<link rel="stylesheet" href="css/animated.css">
 	<!-- для нативного слайдера-->
 	<link rel="stylesheet" href="css/peppermint.required.css">
 	<script src="js/peppermint.min.js"></script>
@@ -42,7 +45,7 @@
 </div>
 
 <!--
- Еще один слайдер 
+ Еще один слайдер
 <div class="peppermint peppermint-inactive" id="peppermint">
   <figure> <img style="width: 100%" src="images/bg_00.png"> </figure>
 
@@ -97,7 +100,7 @@
 </nav>
 <hr>
 <div class="row justify-content-md-center">
-	<div class="col-md-4"><img class="" src="images/about.jpg" style="width: 100%" alt=""></div>
+	<div class="col-md-4"><img class="post" src="images/about.jpg" style="width: 100%" alt=""></div>
 	<div class="col-md-6">
 		<h3 class="mt-0 text-primary text-center">Физико-математическая школа "Вектор"</h3>
 		С октября 2015 года при поддержке управления образования города Калуги муниципальным бюджетным учреждением «Центр психолого-педагогической, медицинской и социальной помощи «Стратегия» города Калуги был запущен проект физико-математической школы «Вектор», занятия которой проходят на базе МБОУ «СОШ № 13».
@@ -106,7 +109,7 @@
 </div>
 <hr>
 <div class="row justify-content-md-center">
-	<div class="col-md-2"><img src="images/cel.png" style="width: 100%" alt=""></div>
+	<div class="col-md-2"><img class="post" src="images/cel.png" style="width: 100%" alt=""></div>
 	<div class="col-md-8">
 		<h4 class=" text-primary text-center">Цель школы:</h4>
 		формирование дополнительной образовательной среды для учащихся 8-10 классов МБОУ, выбравших естественно-научное направление, развития их интеллектуального потенциала и потребности к продолжению образования и самообразованию.
@@ -126,14 +129,14 @@
 			<li>организация или оказание помощи общеобразовательным учреждениям в организации школьных олимпиад и научных конференций по физике и математике;</li>
 			<li>организация научно-исследовательской и проектной работы учащихся МБОУ г. Калуги.</li>
 		</ul>
-		
+
 	</div>
-	<div class="col-md-2 d-flex align-items-center"><img class="" src="images/task.png" style="width: 100%" alt=""></div>
+	<div class="col-md-2 d-flex align-items-center"><img class="postleft" src="images/task.png" style="width: 100%" alt=""></div>
 </div>
 <hr>
 <div class="row justify-content-md-center">
 	<div class="col-md-2 d-flex align-items-center">
-		<img src="images/kurs.png" style="width: 100%" alt="">
+		<img src="images/kurs.png" class="post" style="width: 100%" alt="">
 	</div>
 	<div class="col-md-8">
 		<h4 class=" text-primary text-center">Изучаемые курсы</h4>
@@ -165,11 +168,22 @@
 	Лучшие учителя школ города, преподаватели ВУЗов, педагоги-психологи помогают каждому из учеников реализовать свой потенциал, т. е. поставить свои учебные цели и достичь их, определить личностные смыслы обучения. В школе 120 учащихся, которым предоставляется возможность и право выбора освоения следующих курсов: Все занятия, проходящие на базе МБОУ «СОШ № 13», КФ ФГБОУ ВПО «Московский государственный технический университет имени Н.Э. Баумана», на площадках партнеров (музеи, предприятия, образовательные учреждения СПО и ВПО и т.д.) способствуют выстраиванию учащимися индивидуальной образовательной траектории. С 7 по 12 декабря 2015 года проходили выездные занятия школы «Вектор» по математике, физике и информатике в рамках проекта «ШОД круглый год» на базе оздоровительного лагеря «Белка».
 </div>
 <div class="col-md-2 d-flex align-items-center">
-	<img src="images/gorizont.png" style="width: 100%" alt="">
+	<img src="images/gorizont.png" class="postleft" style="width: 100%" alt="">
 </div>
 </div>
 <hr>
 </div>
-
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+	jQuery('.post').addClass("hidden").viewportChecker({
+	classToAdd: 'visible animated fadeInLeft',
+	offset: 100
+	});
+	jQuery('.postleft').addclass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInRight',
+			offcet: 100
+		});
+	});
+</script>
 </body>
 </html>
