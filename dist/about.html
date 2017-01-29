@@ -177,10 +177,12 @@
 	jQuery(document).ready(function() {
 	jQuery('.post').addClass("hidden").viewportChecker({
 	classToAdd: 'visible animated fadeInLeft',
+	repeat: true,
 	offset: 100
 	});
-	jQuery('.postleft').addclass("hidden").viewportChecker({
+	jQuery('.postleft').addClass("hidden").viewportChecker({
 			classToAdd: 'visible animated fadeInRight',
+			repeat: true,
 			offcet: 100
 		});
 	});
